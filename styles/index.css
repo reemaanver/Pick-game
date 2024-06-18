@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  background-color: rgb(196, 79, 134);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  background-color: rgba(255, 255, 255, 0.905);
+  width: 75%;
+  padding: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+/* HEADER STYLES */
+
+header {
+  display: flex;
+  gap: 20px;
+}
+
+.dice-img {
+  width: 70px;
+}
+
+.game-name {
+  color: #c44f86;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* MAIN STYLES */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  font-size: 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: #c44f86;
+  padding: 16px 32px;
+  border-radius: 100px;
+}
+
+.btn:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* GAME RULES MODAL*/
+.hidden {
+  display: none;
+}
