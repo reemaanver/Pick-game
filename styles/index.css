@@ -64,10 +64,11 @@ main {
   background-color: #c44f86;
   padding: 16px 32px;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .btn:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* GAME RULES MODAL*/
@@ -80,6 +81,10 @@ main {
   font-size: 30px;
   top: 15px;
   right: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fff;
 }
 
 .game-rules {
