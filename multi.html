@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pick Game</title>
-    <link rel="stylesheet" href="multi.css" />
+    <link rel="stylesheet" href="styles/multi.css" />
   </head>
   <body>
     <main>
-      <section class="player player1 player-active">
-        <h2 class="name">Player 1</h2>
-        <p class="score">43</p>
+      <section class="player player0 player-active">
+        <h2 class="name player1-name">?</h2>
+        <p class="score score-0">43</p>
         <div class="current-box">
           <p class="current">Current</p>
-          <p class="current-score">0</p>
+          <p class="current-score current-score-0">0</p>
         </div>
       </section>
-      <section class="player player2">
-        <h2 class="name">Player 2</h2>
-        <p class="score">24</p>
+      <section class="player player1">
+        <h2 class="name player2-name">?</h2>
+        <p class="score score-1">24</p>
         <div class="current-box">
           <p class="current">Current</p>
-          <p class="current-score">0</p>
+          <p class="current-score current-score-1">0</p>
         </div>
       </section>
       <button class="btn-new-game btn">
@@ -64,19 +64,20 @@
         <p>Hold</p>
       </button>
 
-      <img class="dice" src="/images/dice-1.png" alt="" />
+      <img class="dice" src="/images/dice-1.png" alt="image of a dice" />
     </main>
-    <div class="hidden">
-      <div class="player-names">
-        <h3 class="player-form-title">Player Names</h3>
-        <p class="player-form">Player 1</p>
-        <input type="text" />
-        <p class="player-form">PLayer 2</p>
-        <input type="text" />
-        <button class="form-btn">OK</button>
-      </div>
+    <button class="home">Go Back</button>
+
+    <div class="player-names">
+      <h3 class="player-form-title">Player Names</h3>
+      <p class="player-form">Player 1</p>
+      <input class="name-1" type="text" />
+      <p class="player-form">PLayer 2</p>
+      <input class="name-2" type="text" />
+      <button class="form-btn">ok</button>
     </div>
-    <div class="overlay hidden"></div>
+
+    <div class="overlay"></div>
 
     <script src="multi.js"></script>
   </body>
