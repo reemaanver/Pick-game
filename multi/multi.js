@@ -116,5 +116,5 @@ newBtn.addEventListener('click', init);
 
 // HOME BUTTON
 document.querySelector('.home').addEventListener('click', function () {
-  window.location.href = 'index.html';
+  window.location.href = '/index/index.html';
 });

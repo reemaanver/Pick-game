@@ -35,5 +35,5 @@ document.addEventListener('keydown', function (e) {
 // 2 PLAYER BUTTTON
 
 multiBtn.addEventListener('click', function () {
-  window.location.href = 'multi.html';
+  window.location.href = '/multi/multi.html';
 });
