@@ -5,6 +5,7 @@ const rulesModal = document.querySelector('.game-rules');
 const overlay = document.querySelector('.overlay');
 const rulesCloseBtn = document.querySelector('.rules-close');
 const multiBtn = document.querySelector('.btn-multi');
+const singleBtn = document.querySelector('.btn-self');
 
 // GAME RULES MODAL
 
@@ -35,5 +36,10 @@ document.addEventListener('keydown', function (e) {
 // 2 PLAYER BUTTTON
 
 multiBtn.addEventListener('click', function () {
-  window.location.href = '/multi/multi.html';
+  window.location.href = 'multi.html';
+});
+
+// 1 PLAYER
+singleBtn.addEventListener('click', function () {
+  window.location.href = 'single.html';
 });

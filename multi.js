@@ -90,6 +90,7 @@ diceBtn.addEventListener('click', function () {
 const win = function () {
   playing = false;
   diceImg.classList.add('hidden');
+  document.querySelector(`.current-score-${activePlayer}`).textContent = 0;
   document
     .querySelector(`.player${activePlayer}`)
     .classList.add('player-winner');
@@ -116,5 +117,5 @@ newBtn.addEventListener('click', init);
 
 // HOME BUTTON
 document.querySelector('.home').addEventListener('click', function () {
-  window.location.href = '/index/index.html';
+  window.location.href = 'index.html';
 });
