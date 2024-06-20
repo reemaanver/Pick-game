@@ -66,7 +66,6 @@ const changeActive = function () {
   if (activePlayer === 1) {
     playing = false;
     let times = Math.trunc(Math.random() * 5) + 1;
-    console.log(`count: ${times}`);
     computerPlay(times);
   } else {
     playing = true;
@@ -98,20 +97,13 @@ const computerHold = function () {
 
 const computerPlay = function (count) {
   if (count <= 0) {
-    let holdornot = Math.trunc(Math.random() * 2) + 1;
-    console.log(holdornot);
-    if (holdornot == 1) {
-      computerHold();
-    } else {
-      changeActive();
-    }
+    computerHold();
 
     return;
   }
   setTimeout(function () {
     let diceNumber = Math.trunc(Math.random() * 6) + 1;
     diceImg.src = `images/dice-${diceNumber}.png`;
-    console.log(`dice: ${diceNumber}, count: ${count}`);
     if (diceNumber != 1) {
       currentScore += diceNumber;
       document.querySelector(`.current-score-${activePlayer}`).textContent =
@@ -128,7 +120,6 @@ const computerPlay = function (count) {
 diceBtn.addEventListener('click', function () {
   if (playing) {
     let diceNumber = Math.trunc(Math.random() * 6) + 1;
-    console.log(`dice1: ${diceNumber}`);
     diceImg.classList.remove('hidden');
     diceImg.src = `images/dice-${diceNumber}.png`;
     if (diceNumber != 1) {
